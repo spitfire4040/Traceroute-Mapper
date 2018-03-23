@@ -31,7 +31,7 @@ def get_route():
 							item = item.strip('(),')
 
 							# filter private IP addresses
-							if str(item[0:3]) == '10.' or str(item[0:8]) == '192.168':
+							if str(item[0:3]) == '10.' or str(item[0:8]) == '192.168' or str(item[0:8]) == '172.16.':
 								pass
 							else:
 								output.write(item + '\n')
